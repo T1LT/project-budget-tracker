@@ -98,7 +98,7 @@ const Main = () => {
       [event.target.name]: event.target.value,
     });
   };
-  // nice comment
+
   const addProject = (event) => {
     event.preventDefault();
     if (!showError) {
@@ -407,10 +407,22 @@ const Main = () => {
         value={{ settab, projectId, counter, setCounter, setProjectId }}
       >
         <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/transactions" component={Transactions} />
-          <Route exact path="/reports" component={Reports} />
-          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/project-budget-tracker" component={Dashboard} />
+          <Route
+            exact
+            path="/project-budget-tracker/transactions"
+            component={Transactions}
+          />
+          <Route
+            exact
+            path="/project-budget-tracker/reports"
+            component={Reports}
+          />
+          <Route
+            exact
+            path="/project-budget-tracker/projects"
+            component={Projects}
+          />
         </Switch>
       </tabContext.Provider>
     </Router>
