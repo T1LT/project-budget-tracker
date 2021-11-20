@@ -1,0 +1,316 @@
+#budgettext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 20vw;
+}
+
+#totaltext,
+#inctext,
+#percenttext,
+#cvtext,
+#eactext,
+#vactext,
+#cpitext {
+  font-size: 1.5em;
+}
+
+#totalamt {
+  color: green;
+  font-size: 3.6em;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+#incamt {
+  color: red;
+  font-size: 3.6em;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+#percentage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 20vw;
+}
+
+#left {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1%;
+  row-gap: 2%;
+}
+
+.no-data {
+  font-size: 1.65rem;
+}
+
+#erroramt {
+  color: red;
+  font-size: 3.6em;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+#cvamt,
+#eacamt,
+#vacamt,
+#cpiamt,
+#percentamt {
+  color: #00bfff;
+  font-size: 3.6em;
+  padding: 2.5%;
+  font-weight: bold;
+}
+
+/* IMPORTANT: ADD !important TO OVERRIDE CHARTJS RESPONSIVENESS*/
+#donut {
+  width: 500px !important;
+  height: 500px !important;
+}
+
+#dash {
+  margin-top: 2.5%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1.75fr 1fr;
+}
+
+@media (max-width: 1750px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 3.5em;
+  }
+}
+
+@media (max-width: 1550px) {
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 1.25em;
+  }
+
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 3.25em;
+  }
+}
+
+@media (max-width: 1500px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 1400px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 2.75em;
+  }
+
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 1.15em;
+  }
+
+  #donut {
+    width: 400px !important;
+    height: 400px !important;
+  }
+
+  #dash {
+    margin-top: 5%;
+  }
+
+  .no-data {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 2.5em;
+  }
+
+  #dash {
+    margin-top: 7%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 2.25em;
+  }
+
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 1em;
+  }
+
+  .no-data {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 2.25em;
+  }
+
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 1050px) {
+  #dash {
+    margin: 2% 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #left {
+    height: 400px;
+    margin-bottom: 2%;
+  }
+
+  .no-data {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 675px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 2em;
+  }
+
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  #left {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  #cvamt,
+  #eacamt,
+  #vacamt,
+  #cpiamt,
+  #percentamt,
+  #incamt,
+  #totalamt,
+  #erroramt {
+    font-size: 1.75em;
+  }
+
+  #totaltext,
+  #inctext,
+  #percenttext,
+  #cvtext,
+  #eactext,
+  #vactext,
+  #cpitext {
+    font-size: 0.75em;
+  }
+
+  #donut {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  .no-data {
+    font-size: 1rem;
+  }
+}
