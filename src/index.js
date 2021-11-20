@@ -124,21 +124,27 @@ const Main = () => {
       <div id="navbar">
         <div id="navleft">
           <h6>Project Budget Tracker</h6>
-          <Link to="/" style={tab === "dash" ? style2 : style1}>
+          <Link
+            to="/project-budget-tracker"
+            style={tab === "dash" ? style2 : style1}
+          >
             Dashboard
           </Link>
           <Link
-            to="/transactions"
+            to="/project-budget-tracker/transactions"
             style={tab === "tran" ? style2 : style1}
             onClick={() => settab("tran")}
           >
             Transactions
           </Link>
-          <Link to="/reports" style={tab === "repo" ? style2 : style1}>
+          <Link
+            to="/project-budget-tracker/reports"
+            style={tab === "repo" ? style2 : style1}
+          >
             Reports
           </Link>
           <Link
-            to="/projects"
+            to="/project-budget-tracker/projects"
             style={tab === "proj" ? style2 : style1}
             onClick={() => settab("proj")}
           >
@@ -428,5 +434,5 @@ const Main = () => {
     </Router>
   );
 };
-// nice
+
 ReactDOM.render(<Main />, document.getElementById("root"));
