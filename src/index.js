@@ -124,27 +124,21 @@ const Main = () => {
       <div id="navbar">
         <div id="navleft">
           <h6>Project Budget Tracker</h6>
-          <Link
-            to="/project-budget-tracker"
-            style={tab === "dash" ? style2 : style1}
-          >
+          <Link to="/" style={tab === "dash" ? style2 : style1}>
             Dashboard
           </Link>
           <Link
-            to="/project-budget-tracker/transactions"
+            to="/transactions"
             style={tab === "tran" ? style2 : style1}
             onClick={() => settab("tran")}
           >
             Transactions
           </Link>
-          <Link
-            to="/project-budget-tracker/reports"
-            style={tab === "repo" ? style2 : style1}
-          >
+          <Link to="/reports" style={tab === "repo" ? style2 : style1}>
             Reports
           </Link>
           <Link
-            to="/project-budget-tracker/projects"
+            to="/projects"
             style={tab === "proj" ? style2 : style1}
             onClick={() => settab("proj")}
           >
@@ -413,22 +407,10 @@ const Main = () => {
         value={{ settab, projectId, counter, setCounter, setProjectId }}
       >
         <Switch>
-          <Route exact path="/project-budget-tracker" component={Dashboard} />
-          <Route
-            exact
-            path="/project-budget-tracker/transactions"
-            component={Transactions}
-          />
-          <Route
-            exact
-            path="/project-budget-tracker/reports"
-            component={Reports}
-          />
-          <Route
-            exact
-            path="/project-budget-tracker/projects"
-            component={Projects}
-          />
+          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/transactions" component={Transactions} />
+          <Route exact path="/reports" component={Reports} />
+          <Route exact path="/projects" component={Projects} />
         </Switch>
       </tabContext.Provider>
     </Router>
