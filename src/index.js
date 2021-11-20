@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import Modal from "react-modal";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Transactions from "./Components/Transactions";
 import Projects from "./Components/Projects";
 import Dashboard from "./Components/Dashboard";
