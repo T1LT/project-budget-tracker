@@ -222,7 +222,8 @@ const Projects = () => {
   const updateProject = (event) => {
     event.preventDefault();
     if (!showError) {
-      const url = "http://localhost:8000/api/projects/modify-project/";
+      const url =
+        "https://project-budget-tracker.herokuapp.com/api/projects/modify-project/";
       axios.put(url, formProjectData).catch((error) => {
         console.log(error);
       });
@@ -248,7 +249,9 @@ const Projects = () => {
 
   useEffect(() => {
     (async () => {
-      const response = await axios.get("http://localhost:8000/api/projects/");
+      const response = await axios.get(
+        "https://project-budget-tracker.herokuapp.com/api/projects/"
+      );
       setProjectData(response.data);
     })();
   }, [projectId, counter]);
@@ -585,7 +588,7 @@ const Projects = () => {
                               ) {
                                 axios
                                   .delete(
-                                    "http://localhost:8000/api/projects/modify-project/",
+                                    "https://project-budget-tracker.herokuapp.com/api/projects/modify-project/",
                                     {
                                       data: {
                                         id: row.id,
@@ -594,7 +597,7 @@ const Projects = () => {
                                   )
                                   .then(async () => {
                                     const response = await axios.get(
-                                      "http://localhost:8000/api/projects/"
+                                      "https://project-budget-tracker.herokuapp.com/api/projects/"
                                     );
                                     setProjectData(response.data);
                                     setProjectId(projectData[0].id);

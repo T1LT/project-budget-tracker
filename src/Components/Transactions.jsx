@@ -175,7 +175,7 @@ const Transactions = () => {
   useEffect(() => {
     (async () => {
       const response = await axios.get(
-        `http://localhost:8000/api/project/${projectId}/transactions`
+        `https://project-budget-tracker.herokuapp.com/api/project/${projectId}/transactions`
       );
       setTransactionData(response.data["transactions"]);
       setProjectStartDate(response.data["projectStartDate"]);
@@ -221,7 +221,8 @@ const Transactions = () => {
   const handleTransaction = (event) => {
     event.preventDefault();
     if (!showError) {
-      const url = "http://localhost:8000/api/projects/add-transaction/";
+      const url =
+        "https://project-budget-tracker.herokuapp.com/api/projects/add-transaction/";
 
       if (caller === "Edit") {
         axios.put(url, formTransactionData).catch((error) => {
@@ -293,7 +294,7 @@ const Transactions = () => {
               onClick={() => {
                 axios
                   .get(
-                    `http://localhost:8000/api/project/${projectId}/download_csv/`,
+                    `https://project-budget-tracker.herokuapp.com/api/project/${projectId}/download_csv/`,
                     { responseType: "blob" }
                   )
                   .then((response) => {
@@ -397,7 +398,7 @@ const Transactions = () => {
                               ) {
                                 axios
                                   .delete(
-                                    "http://localhost:8000/api/projects/add-transaction/",
+                                    "https://project-budget-tracker.herokuapp.com/api/projects/add-transaction/",
                                     {
                                       data: {
                                         "transaction-id": row.id,

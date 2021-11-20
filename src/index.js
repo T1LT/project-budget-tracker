@@ -36,7 +36,7 @@ const Main = () => {
 
   useEffect(() => {
     (async () => {
-      const url = `http://localhost:8000/api/projects/names/`;
+      const url = `https://project-budget-tracker.herokuapp.com/api/projects/names/`;
       const response = await axios.get(url);
       const allProjects = response.data;
       setProjectNames(allProjects);
@@ -102,7 +102,8 @@ const Main = () => {
   const addProject = (event) => {
     event.preventDefault();
     if (!showError) {
-      const url = "http://localhost:8000/api/projects/modify-project/";
+      const url =
+        "https://project-budget-tracker.herokuapp.com/api/projects/modify-project/";
       axios.post(url, projectData).catch((error) => {
         console.log(error);
       });

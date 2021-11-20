@@ -14,7 +14,9 @@ const Reports = () => {
   useEffect(() => {
     settab("repo");
     axios
-      .get(`http://localhost:8000/api/project/${projectId}/report/`)
+      .get(
+        `https://project-budget-tracker.herokuapp.com/api/project/${projectId}/report/`
+      )
       .then((response) => {
         let data = response.data["expenses"];
         setExpenseData(data);
