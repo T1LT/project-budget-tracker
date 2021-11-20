@@ -107,7 +107,7 @@ const Main = () => {
       axios.post(url, projectData).catch((error) => {
         console.log(error);
       });
-      setCounter(counter - 1);
+      setCounter(counter + 1);
       closeForm();
     }
   };
