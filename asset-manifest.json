@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/ProjectBudgetTracker/frontend/static/css/main.e0c6d364.chunk.css",
+    "main.js": "/ProjectBudgetTracker/frontend/static/js/main.355807b6.chunk.js",
+    "main.js.map": "/ProjectBudgetTracker/frontend/static/js/main.355807b6.chunk.js.map",
+    "runtime-main.js": "/ProjectBudgetTracker/frontend/static/js/runtime-main.ca610da2.js",
+    "runtime-main.js.map": "/ProjectBudgetTracker/frontend/static/js/runtime-main.ca610da2.js.map",
+    "static/js/2.57ad122f.chunk.js": "/ProjectBudgetTracker/frontend/static/js/2.57ad122f.chunk.js",
+    "static/js/2.57ad122f.chunk.js.map": "/ProjectBudgetTracker/frontend/static/js/2.57ad122f.chunk.js.map",
+    "index.html": "/ProjectBudgetTracker/frontend/index.html",
+    "static/css/main.e0c6d364.chunk.css.map": "/ProjectBudgetTracker/frontend/static/css/main.e0c6d364.chunk.css.map",
+    "static/js/2.57ad122f.chunk.js.LICENSE.txt": "/ProjectBudgetTracker/frontend/static/js/2.57ad122f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca610da2.js",
+    "static/js/2.57ad122f.chunk.js",
+    "static/css/main.e0c6d364.chunk.css",
+    "static/js/main.355807b6.chunk.js"
+  ]
+}
