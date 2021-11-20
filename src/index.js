@@ -98,7 +98,7 @@ const Main = () => {
       [event.target.name]: event.target.value,
     });
   };
-
+  // nice comment
   const addProject = (event) => {
     event.preventDefault();
     if (!showError) {
